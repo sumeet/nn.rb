@@ -26,6 +26,7 @@ puts "cost: #{cost(w)}"
 100_000.times do
     dcost = (cost(w + eps) - cost(w)) / eps
     w -= rate*dcost
-    puts "cost: #{cost(w)}"
+    puts "cost: #{cost(w)}, w: #{w}"
 end
-print "at the end, w = #{w}\n"
+
+puts "at the end, w = #{w}"
